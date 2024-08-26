@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+;
 
 module.exports = (env) => {
   return {
@@ -28,12 +29,13 @@ module.exports = (env) => {
         filename: '[name][contenthash].css'
       }),
     ],
+
     module: {
       rules: [
         {
-          test: /\.woff2?$/i,
+          test: /\.ttf?$/i,
           type:'asset/resource',
-          generatir:{
+          generator:{
             filename:'fonts/[name].[ext]',
           }
         },
@@ -53,7 +55,7 @@ module.exports = (env) => {
         },
         {
           test: /\.scss$/i,
-          use: ["style-loader", "css-loader", "sass-loader"],
+          use: ["style-loader","css-loader", "sass-loader"],
         },
       ],
     },

@@ -3,9 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>BestCars</title>
 </head>
 <body>
-  <h1>Hello world</h1>
+  <header class="header">
+      <div class="header__top">
+        <address class="header__address address text--sm --light-gray">
+          <span class="address__geo">Новосибирск, ул. Дунаевского, 25/1 </span>
+          <span class="address__time">Ежедневно с 9:00 до 20:00</span>
+        </address>
+      </div>
+      <div class="header__main">
+        <div class="header__main-wrap">
+          <div class="header__logo"><img src="./assets//img/logo.png" alt="Автосалон"></div>
+          <nav class="header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item text-md"><a href="#">Главная</a></li>
+              <li class="navigation__item text-md"><a href="#">Каталог</a></li>
+              <li class="navigation__item text-md"><a href="#">Автокредит</a></li>
+              <li class="navigation__item text-md"><a href="#">Trade-in</a></li>
+              <li class="navigation__item text-md"><a href="#">Выкуп</a></li>
+              <li class="navigation__item text-md"><a href="#">Акции</a></li>
+              <li class="navigation__item text-md"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        <div class="header__controls">
+          <div class="input search">
+            <input type="search" name="search" placeholder="Поиск по марке" id="search">
+          </div>
+          <button class="button--dark">Связаться</button>
+        </div>
+        </div>
+      </div>
+      <div class="header__breadcrumbs-wrap">
+        <div class="breadcrumbs">
+          <span class="breadcrumbs__item text-sm">Главная</span>
+          <span class="breadcrumbs__item text-sm">Каталог</span>
+          <span class="breadcrumbs__item text-sm">Haval</span>
+          <span class="breadcrumbs__item text-sm">Jolion</span>
+        </div>
+      </div>
+  </header>
+  <main>
+    <section class="product-section">
+      <div class="product-section__title-block">
+        <div class="product-section__title-block-wrap">
+          <h1 class="product-section__title heading--lg">Haval Jolion</h1>
+          <h2 class="product-section__city-sub-title heading--md gray --gray">в Новосибирске </h2>
+        </div>
+        <span class="product-section__quantity-label text--sm --dark-gray">4 автомобиля в наличии</span>
+      </div>
+      <div class="product-section__content">
+        <div class="product-section__image-block image-block">
+          <div class="image-block__image">
+            <span class="image-block__discount text--md --white">-30%</span>
+            <div class="image-block__color-name">
+              <span class="text--sm --gray">Цвет</span>
+              <span class="text--md js-color-name">Благородный агат</span>
+            </div>
+            <img src="./assets/img/car.png" alt="Haval Jolion">
+          </div>
+          <ul class="image-block__color-selector js-color-selector">
+            <li data-color="gray"class="image-block__color-selector-item active"></li>
+            <li data-color="black"class="image-block__color-selector-item"></li>
+            <li data-color="white"class="image-block__color-selector-item"></li>
+            <li data-color="blue"class="image-block__color-selector-item"></li>
+            <li data-color="red"class="image-block__color-selector-item"></li>
+          </ul>
+        </div>
+        <div class="product-section__offer offer">
+          <div class="offer__advantages">
+            <div class="offer__advantages-item offer__advantages-item--lightning">
+              <span class="icon"></span>
+              <span class="name text--sm">Мощность</span>
+              <span class="value heading--sm">249 Л.С.</span>
+            </div>
+            <div class="offer__advantages-item offer__advantages-item--speed">
+              <span class="icon"></span>
+              <span class="name text--sm">Объем двигателя</span>
+              <span class="value heading--sm">2,0 Л</span>
+            </div>
+            <div class="offer__advantages-item offer__advantages-item--droplet">
+              <span class="icon"></span>
+              <span class="name text--sm">Расход</span>
+              <span class="value heading--sm">8,2 Л</span>
+            </div>
+            <div class="offer__advantages-item offer__advantages-item--drive">
+              <span class="icon"></span>
+              <span class="name text--sm">Привод</span>
+              <span class="value heading--sm">Полный</span>
+            </div>
+          </div>
+          <div class="offer__switchers">
+            <form action="#" class="offer__form">
+              <label class="switcher">
+                <input type="checkbox" value="170000" class="js-discount-switch" name="trade-in">
+                <div class="switcher__switch"></div>
+                <span class="switcher__label text--md">Скидка по Trade-in</span>
+                <span class="switcher__value heading--sm">- 170 000 ₽</span>
+              </label>
+              <label class="switcher">
+                <input type="checkbox" value="250000" class="js-discount-switch" name="credit">
+                <div class="switcher__switch"></div>
+                <span class="switcher__label text--md">Покупка в кредит</span>
+                <span class="switcher__value heading--sm">-250 000 ₽</span>
+              </label>
+              <label class="switcher">
+                <input type="checkbox" value="80000" class="js-discount-switch" name="util">
+                <div class="switcher__switch"></div>
+                <span class="switcher__label text--md">Скидка по программе утилизации</span>
+                <span class="switcher__value heading--sm">-80 000 ₽</span>
+              </label>
+            </form>
+          </div>
+          <div class="offer__total-discount">
+            <span class="text--sm">Ваша выгода</span>
+            <span class="heading--sm offer__total-discount-value js-total-discount">
+              0 ₽
+            </span>
+          </div>
+          <div class="offer__start-price">
+            <h3 class="heading--lg --blue">от 7 070 000 ₽</h3>
+            <span class="offer__credit-start-price text--sm --blue">
+              В кредит от 89 000 ₽/мес
+            </span>
+          </div>
+          <div class="offer__price-without-discount">
+            <h3 class="heading--md">Цена без учета скидки: от 7 400 000 ₽</h3>
+          </div>
+          <div class="offer__buttons">
+            <button class="button--light button--flex">Забронировать</button>
+            <button class="button--dark button--flex">Купить в кредит</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

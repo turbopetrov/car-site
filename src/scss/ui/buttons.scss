@@ -1,0 +1,48 @@
+%button {
+  @extend %heading;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  outline: none;
+  width: fit-content;
+  border-radius: $radius;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.button--light {
+  @extend %button;
+  background-color: transparent;
+  color: $dark;
+  border: 1px solid $dark;
+  &:hover {
+    border-color: $blue;
+    color: $blue;
+  }
+  &:active {
+    background-color: $light-blue;
+    color: $blue;
+  }
+}
+
+.button--dark {
+  @extend %button;
+  background-color: $blue;
+  color: $white;
+  &:hover {
+    background: $dark-blue;
+  }
+  &:active{
+    color: $light-blue;
+  }
+}
+
+.button--flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}

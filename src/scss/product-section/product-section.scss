@@ -1,0 +1,59 @@
+@import './image-block.scss';
+@import './offer.scss';
+
+.product-section {
+  width: $size--md;
+  margin: 0 auto;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: $gap--xl;
+  &__title-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__title-block-wrap {
+    display: flex;
+    gap: $gap--lg;
+    align-items: flex-end;
+  }
+
+  &__quantity-label {
+    display: block;
+    padding: 4px 12px 4px 26px;
+    background-color: $light-gray;
+    border-radius: $radius;
+    line-height: 1.2;
+    position: relative;
+    &::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 12px;
+      display: block;
+      border-radius: 50%;
+      background-color: $blue;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    gap: $gap--sm;
+  }
+
+  &__image-block{
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+
+  &__offer {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}

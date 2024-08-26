@@ -1,0 +1,32 @@
+$blue:#2E58DB;
+$dark-blue:#1e3d97;
+$light-blue:#E4ECF8;
+$red:#D02D2D;
+$dark:#151515;
+$white:#FFFFFF;
+$dark-gray:#646970;
+$gray:#9CA5B3;
+$light-gray: #DCE1E9;
+
+$bg-blue: #F3F6FB;
+
+$car-gray:#E0E0E0;
+$car-black:#000000;
+$car-white:#FFFFFF;
+$car-blue:#AAC5F0;
+$car-red:#C31313;
+
+.--blue {color:$blue};
+.--dark-blue {color:$dark-blue};
+.--light-blue {color:$light-blue};
+.--red {color:$red};
+.--dark {color: $dark;};
+.--white {color:$white};
+.--gray {color:$gray};
+.--dark-gray {color:$dark-gray};
+.--light-gray {color:$light-gray};
+.--car-gray {color:$car-gray};
+.--car-black {color:$car-black};
+.--car-white {color:$car-white};
+.--car-blue {color:$car-blue};
+.--car-red {color:$car-red};

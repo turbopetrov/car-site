@@ -1,0 +1,79 @@
+.offer {
+  padding: 40px;
+  border: 1px solid $light-gray;
+  border-radius: $radius;
+  box-sizing: border-box;
+  &__advantages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__advantages-item {
+    box-sizing: border-box;
+    width: 136px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 16px 10px;
+    background-color: $light-blue;
+    border-radius: $radius;
+    & .icon {
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &--speed .icon {
+      background-image: url('./assets/img/speedometer.svg');
+    }
+    &--lightning .icon {
+      background-image: url('./assets/img/lightning.svg');
+    }
+    &--droplet .icon {
+      background-image: url('./assets/img/droplets.svg');
+    }
+    &--drive .icon {
+      background-image: url('./assets/img/drive.svg');
+    }
+  }
+  &__switchers {
+    margin-top: 30px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__total-discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  &__start-price {
+    margin-top: 40px;
+    display: flex;
+    gap: $gap--lg;
+    align-items: center;
+  }
+  &__credit-start-price {
+    padding: $gap--xs $gap--sm;
+    border-radius: $radius;
+    background-color: $light-blue;
+  }
+  &__price-without-discount {
+    margin-top: 30px;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: $gap--md;
+    margin-top: 40px;
+  }
+}

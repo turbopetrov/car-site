@@ -1,1 +1,28 @@
-@import './scss/ui.scss';
+@import './scss/typography';
+@import './scss/colors';
+@import './scss/ui/ui.scss';
+@import './scss/header.scss';
+@import './scss/product-section/product-section.scss';
+
+
+body {
+  @extend %text;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-blue;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: $dark;
+}
+
+ul,li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+

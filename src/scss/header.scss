@@ -1,0 +1,135 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  &__top {
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+  }
+  &__address {
+    width: $size--md;
+  }
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    &-wrap {
+      width: $size--md;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $gap--md 0;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    gap: $gap--sm;
+  }
+
+  &__breadcrumbs-wrap {
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.address {
+  display: flex;
+  height: 32px;
+  justify-content: space-between;
+  align-items: center;
+  &__geo {
+    position: relative;
+    margin-left: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      transform: translateY(-50%);
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url('./assets/img/geo.svg');
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+  &__time {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      transform: translateY(-50%);
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url('./assets/img/clock.svg');
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+}
+
+.navigation {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: $gap--xs;
+  }
+  &__item {
+    padding: 8px 20px;
+    border-radius: $radius;
+    border: 1px solid transparent;
+    border-bottom-color: $light-gray;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+      border-color: $blue;
+    }
+    &:active {
+      background-color: $light-blue;
+    }
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: start;
+  width: $size--md;
+  &__item {
+    position:relative;
+    line-height: 1rem;
+    padding: 6px 16px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:not(:last-child) {
+      color: $dark-gray;
+    }
+    &:not(:first-child) {
+      margin-left: 24px;
+      &::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url('./assets/img/breadcrumbs-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 50%;
+        left: -24px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

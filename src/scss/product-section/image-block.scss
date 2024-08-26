@@ -1,0 +1,78 @@
+.image-block {
+  display: flex;
+  flex-direction: column;
+  gap: $gap--md;
+
+  &__image {
+    border-radius: $radius;
+    background-color: $white;
+    position: relative;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__color-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: $gap--lg;
+  }
+
+  &__color-selector {
+    display: flex;
+    flex-direction: row;
+    gap: $gap--sm;
+    padding: $gap--md $gap--lg;
+    border-radius: $radius;
+    border: 1px solid $light-gray;
+  }
+
+  &__color-selector-item {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s;
+    &.active {
+      transform: scale(1.1);
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+    &[data-color="gray"]{
+      background-color: $car-gray;
+    }
+    &[data-color="black"]{
+      background-color: $car-black;
+    }
+    &[data-color="white"]{
+      background-color: $car-white;
+    }
+    &[data-color="blue"]{
+      background-color: $car-blue;
+    }
+    &[data-color="red"]{
+      background-color: $car-red;
+    }
+  }
+
+  &__discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 32px;
+    background-color: $red;
+    border-radius: 0 $radius 0 $radius;
+  }
+}

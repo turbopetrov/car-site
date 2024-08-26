@@ -1,0 +1,33 @@
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  & > input {
+    outline: none;
+    border-radius: $radius;
+    border: 1px solid $gray;
+    padding: $gap--xs $gap--md;
+    transition: all 0.3s;
+    height: 100%;
+    &[type="search"] {
+      padding-left: calc($gap--md + 34px);
+    }
+    &:focus {
+      border: 2px solid $blue;
+    }
+  }
+  &.search::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: $gap--md;
+    transform: translateY(-50%);
+    background-image: url("./assets/img/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,61 @@
+.switcher {
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: $gap--sm;
+  &  input {
+    display: none;
+  }
+  &__switch {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    box-sizing: border-box;
+    border-radius: $radius;
+    background-color: $light-gray;
+    border: 1px solid $light-gray;
+    transition: all .3s;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: $gap--xs;
+      display: block;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-color: $gray;
+      transition: all .3s;
+    }
+  }
+  &__label {
+    line-height: 0.75;
+    color: $gray;
+  }
+  &__value {
+    line-height: 0.75;
+    color: $gray;
+    margin-left: auto;
+  }
+
+  & input:checked ~ .switcher__switch {
+    background-color: $light-blue;
+    border-color: $blue;
+  }
+
+  & input:checked ~ .switcher__switch::before {
+    background-color: $blue;
+    transform: translate(22px, -50%);
+  }
+
+  & input:checked ~ .switcher__label {
+    color: $blue;
+  }
+  & input:checked ~ .switcher__value {
+    color: $blue;
+  }
+
+}

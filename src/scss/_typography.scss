@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url('./assets/fonts/PTSans-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url('./assets/fonts/PTSans-Bold.ttf');
+  font-weight: 700;
+}
+
+%typography {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-family: "PT Sans";
+  font-style: normal;
+  user-select: none;
+  transition: all .3s;
+}
+
+%heading {
+  @extend %typography;
+  font-weight: 700;
+  line-height: 0.75;
+}
+
+%text {
+  @extend %typography;
+  font-weight: 400;
+}
+
+.heading--sm {
+  @extend %heading;
+  font-size: 1rem;
+}
+
+.heading--md {
+  @extend %heading;
+  font-size: 1.5rem;
+
+}
+
+.heading--lg {
+  @extend %heading;
+  font-size: 2.25rem;
+}
+
+.text--md {
+  @extend %text;
+  font-size: 1rem;
+
+}
+
+.text--sm {
+  @extend %text;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+
