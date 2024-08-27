@@ -1,0 +1,24 @@
+@import './slider-block.scss';
+@import './offer-block.scss';
+.credit-calculator {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  border-radius: $radius;
+  background-color: $bg-blue;
+  padding: 40px;
+  &__slider-block {
+    width: 494px;
+  }
+  &__credit-offer-block {
+    width: 494px;
+    background-color: $white;
+    border-radius: $radius;
+    padding: $gap--xl;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,73 @@
+.credit-offer-block {
+  &__monthly-payment {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__monthly-payment-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $gap--lg;
+  }
+
+  &__decrease-montly-payment {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-image: url('./assets/img/decrease.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    &:active {
+      background-color: $light-blue;
+    }
+  }
+  &__increase-montly-payment {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-image: url('./assets/img/increase.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    &:active {
+      background-color: $light-blue;
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: $gap--md;
+    background-color: $bg-blue;
+    padding: $gap--md;
+    border-radius: $radius;
+
+
+    &-icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-image: url('./assets/img/info.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    &-text {
+      max-width: 55%;
+    }
+  }
+
+  &__btn {
+    padding: 12px 24px;
+    margin-left: auto;
+  }
+}

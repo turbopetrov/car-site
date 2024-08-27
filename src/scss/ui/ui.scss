@@ -2,7 +2,6 @@ $size--md: 1332px;
 $gap--xl: 24px;
 $gap--lg: 16px;
 $gap--md: 12px;
-$gap--md: 12px;
 $gap--sm: 8px;
 $gap--xs: 4px;
 
@@ -10,4 +9,5 @@ $radius: 16px;
 
 @import './buttons.scss';
 @import './inputs.scss';
-@import './switchers.scss'
+@import './switchers.scss';
+@import './slider.scss';

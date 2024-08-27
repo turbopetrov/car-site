@@ -1,0 +1,39 @@
+.slider-block {
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: $gap--xl;
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    gap: $gap--xs;
+    background: $white;
+    border-radius: $radius $radius 0 0;
+  }
+
+  &__slider-title {
+    margin: $gap--md 0 0 $gap--md;
+  }
+
+  &__slider-value {
+    margin-left: $gap--md;
+  }
+  &__extremums + .slider-block__slider {
+    margin-top: $gap--lg;
+  }
+  &__slider > input[type="range"] {
+    margin-top: $gap--sm;
+  }
+
+  &__extremums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: $gap--sm;
+
+  }
+}
+
