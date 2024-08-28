@@ -9,14 +9,18 @@ window.onload = function(){
   discountCalculator();
   styleSliderProgress();
   calculateCredit();
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.complectation-swiper', {
     modules: [Navigation],
     navigation: {
       nextEl: '.js-swiper-button-next',
       prevEl: '.js-swiper-button-prev',
+      disabledClass: 'invisible',
     },
     slidesPerView: 'auto',
     spaceBetween: 12,
   });
-}
+};
+
+
+
 

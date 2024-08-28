@@ -57,6 +57,9 @@
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 10;
+  &.invisible {
+    display: none;
+  }
 }
 
 .swiper__next {
@@ -72,6 +75,9 @@
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 10;
+  &.invisible {
+    display: none;
+  }
 }
 
 .swiper__slide {

@@ -7,6 +7,9 @@ $gap--xs: 4px;
 
 $radius: 16px;
 
+$mobileScreen: 360px;
+
+
 @import './buttons.scss';
 @import './inputs.scss';
 @import './switchers.scss';

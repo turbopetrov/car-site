@@ -5,7 +5,11 @@
 @import './scss/product-section/product-section.scss';
 @import './scss//credit-section/credit-section.scss';
 @import './scss/complectation-section/compelctation.scss';
+@import './scss/table-section/table.scss';
 
+* {
+  box-sizing: border-box
+}
 body {
   @extend %text;
   margin: 0;
