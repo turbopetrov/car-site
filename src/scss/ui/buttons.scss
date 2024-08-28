@@ -9,6 +9,7 @@
   border-radius: $radius;
   padding: 10px 20px;
   border: none;
+  box-sizing: border-box;
   cursor: pointer;
   transition: all .3s;
 }

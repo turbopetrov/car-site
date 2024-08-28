@@ -1,0 +1,79 @@
+.complectation-section {
+  width: $size--md;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.swiper__card {
+  width: 324px;
+  height: 104px;
+  border-radius: $radius;
+  background-color: $white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  &-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-title {
+    display: block;
+    max-width: 60%;
+    line-height: 150%;
+  }
+  &-close {
+    width: 32px;
+    height: 32px;
+    background-image: url('./assets/img/close.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &-btn {
+    padding: 6px $gap--xl;
+  }
+
+}
+
+.swiper__prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -44px;
+  width: 32px;
+  height: 32px;
+  background-image: url('./assets/img/left-arrow.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -44px;
+  width: 32px;
+  height: 32px;
+  background-image: url('./assets/img/right-arrow.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper__slide {
+  flex-shrink: 1 !important;
+}
